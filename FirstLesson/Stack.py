@@ -24,10 +24,10 @@ class Stack:
         self.__data.append(newElem)
 
     def pop(self):
-        return self.__data.pop() if not self.__isEmpty() else 'ok'
+        return self.__data.pop() if not self.__isEmpty() else 'error'
 
     def back(self):
-        return self.__data[-1] if not self.__isEmpty() else 'ok'
+        return self.__data[-1] if not self.__isEmpty() else 'error'
 
     def clear(self) -> None:
         self.__data.clear()
